@@ -1,0 +1,42 @@
+.cta-form {
+  margin: 0;
+  margin-top: 2.5rem;
+  padding: 0;
+
+  &__email {
+    display: block;
+    width: 25vw;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto 2em;
+
+    font: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.5;
+
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      text-align: center;
+      font: inherit;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    color: $font-color-primary;
+
+    background-color: $color-primary;
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+$color-primary: #1cc5dc;
+$color-secondary: #ffcb03;
+$color-tertiary: #ff585f;
+
+$font-color-primary: #444;
+
+$font-primary: 'Poppins', sans-serif;
+$font-logo: 'Jomhuria', cursive;
+
+$bg-primary: #f3f3f3;
+$bg-secondary: #fff;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $font-color-primary;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9;
+  background-color: $bg-primary;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-header {
+  margin: 0 5vw;
+  padding: 0.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  padding-top: 5em;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3.5em 0;
+
+  &--cta {
+    margin: 5em auto;
+    padding: 0;
+  }
+}
+
+.section {
+  &__title {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  &--feature {
+    background-color: $bg-secondary;
+
+    .section__title {
+      text-align: left;
+    }
+  }
+
+  &--options {
+    background-color: $bg-secondary;
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-areas:
+    'img1 feature1'
+    'feature2 img2'
+    'img3 feature3';
+  gap: 4em;
+}
+
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.feature1 {
+  grid-area: feature1;
+}
+.feature2 {
+  grid-area: feature2;
+}
+.feature3 {
+  grid-area: feature3;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'col1 col2 col3';
+  gap: 1em;
+}
+
+.col-1-of-3 {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.col1 {
+  grid-area: col1;
+}
+.col2 {
+  grid-area: col2;
+}
+.col3 {
+  grid-area: col3;
+}
+
+.foot {
+  width: 100%;
+  margin: 0;
+  background-color: $font-color-primary;
+  color: $bg-secondary;
+  padding: 2em 0;
+}

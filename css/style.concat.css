@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-header {
+  margin: 0 5vw;
+  padding: 0.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  padding-top: 5em;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3.5em 0;
+}
+.container--cta {
+  margin: 5em auto;
+  padding: 0;
+}
+
+.section__title {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.section--feature {
+  background-color: #fff;
+}
+.section--feature .section__title {
+  text-align: left;
+}
+.section--options {
+  background-color: #fff;
+}
+
+.features {
+  display: grid;
+  grid-template-areas: "img1 feature1" "feature2 img2" "img3 feature3";
+  gap: 4em;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.feature1 {
+  grid-area: feature1;
+}
+
+.feature2 {
+  grid-area: feature2;
+}
+
+.feature3 {
+  grid-area: feature3;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "col1 col2 col3";
+  gap: 1em;
+}
+
+.col-1-of-3 {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.col1 {
+  grid-area: col1;
+}
+
+.col2 {
+  grid-area: col2;
+}
+
+.col3 {
+  grid-area: col3;
+}
+
+.foot {
+  width: 100%;
+  margin: 0;
+  background-color: #444;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.heading-3, .heading-2, .heading-1 {
+  font-weight: 500;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 0.7em 0;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn--white {
+  display: inline-block;
+  font: inherit;
+  text-decoration: none;
+  background-color: #fff;
+  color: #444;
+  padding: 0.5em 3em;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+.header__logo {
+  font-family: "Jomhuria", cursive;
+  font-size: 59px;
+  line-height: 4rem;
+}
+.header__logo-img {
+  margin: 0 0.6rem 0 0;
+  padding: 0;
+  width: 0.5em;
+  transform: translateY(3px);
+}
+
+.nav__list {
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  color: #444;
+  border-radius: 10px;
+  padding: 3px 8px;
+}
+.nav__link:hover {
+  color: #444;
+  background-color: #1cc5dc;
+  transform: scaleY(1.05);
+}
+
+.cta-form {
+  margin: 0;
+  margin-top: 2.5rem;
+  padding: 0;
+}
+.cta-form__email {
+  display: block;
+  width: 25vw;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto 2em;
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.5;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.cta-form__email:focus {
+  outline: none;
+}
+.cta-form__email::placeholder {
+  text-align: center;
+  font: inherit;
+  font-size: 1.6rem;
+}
+.cta-form__btn {
+  display: block;
+  margin: 0 auto;
+  color: #444;
+  background-color: #1cc5dc;
+  min-width: 200px;
+}
+
+.features__img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+.features__img-credit {
+  line-height: 0.8rem;
+  font-size: 1rem;
+}
+.features__feature {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+}
+.features__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.features p {
+  padding-left: 4rem;
+}
+.features__icon {
+  width: 3rem;
+}
+.features__icon .fa-truck {
+  color: #1cc5dc;
+}
+.features__icon .fa-tools {
+  color: #ffcb03;
+}
+.features__icon .fa-user-shield {
+  color: #ff585f;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  height: 31.5rem;
+  width: 56rem;
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 52rem;
+}
+.card__side {
+  height: 52rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #1cc5dc, #1cc5dc);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #ffcb03, #ffcb03);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #ff585f, #ff585f);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card__picture {
+  background-size: cover;
+  height: 20rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card__picture--1 {
+  background-image: linear-gradient(to right bottom, #1cc5dc, #1cc5dc), url(../img/bike.png);
+}
+.card__picture--2 {
+  background-image: linear-gradient(to right bottom, #ffcb03, #ffcb03), url(../img/bike.png);
+}
+.card__picture--3 {
+  background-image: linear-gradient(to right bottom, #ff585f, #ff585f), url(../img/bike.png);
+}
+.card__heading {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 60%;
+}
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  box-decoration-break: clone;
+}
+.card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 203, 3, 0.85), rgba(255, 203, 3, 0.85));
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(255, 88, 95, 0.85), rgba(255, 88, 95, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(28, 197, 220, 0.85), rgba(28, 197, 220, 0.85));
+}
+.card__details {
+  padding: 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-from {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.foot {
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  padding: 2em;
+}
+.foot__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.foot__link {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.foot__link:hover {
+  color: #1cc5dc;
+}
+.foot__cpr {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.foot__credit {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.foot__credit a {
+  color: #ffcb03;
+}
+
+.foot__item + .foot__item {
+  margin-left: 2rem;
+}
+
+@media (max-width: 41em) {
+  html {
+    font-size: 50%;
+  }
+
+  #video {
+    height: 25rem;
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card__details {
+    padding: 1rem 1rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .card__price-box {
+    margin-bottom: 3rem;
+  }
+  .card__price-value {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 66.5em) {
+  .section--feature .section__title {
+    text-align: center;
+  }
+
+  .container {
+    padding: 3.5em 1em;
+    max-width: 100%;
+  }
+
+  .row {
+    grid-template-areas: "col1" "col2" "col3";
+    gap: 1.5em;
+  }
+}
+@media (max-width: 75em) {
+  .container {
+    width: 100%;
+  }
+
+  .features {
+    gap: 1em;
+    grid-template-areas: "img1 img1" "feature1 feature1" "img2 img2" "feature2 feature2" "img3 img3" "feature3 feature3";
+    justify-items: center;
+    padding: 0 1em;
+  }
+  .features__img {
+    max-width: 350px;
+  }
+  .features__img-credit {
+    line-height: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .features__feature {
+    margin: 1em 0;
+    position: relative;
+    text-align: center;
+    width: 50%;
+  }
+  .features__heading {
+    justify-content: center;
+  }
+  .features p {
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.comp.css.map */

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HappyCycling</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container-header">
+        <p class="header__logo">
+          <img
+            class="header__logo-img"
+            id="header-img"
+            src="/img/wheel.svg"
+            alt="logo"
+          />HappyCycling
+        </p>
+        <nav class="nav" id="nav-bar">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#cta" class="nav-link nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav-link nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#watch" class="nav-link nav__link">Learn more</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav-link nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subscribe" class="nav-link nav__link">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section--cta" id="cta">
+        <div class="container container--cta">
+          <div class="section__title u-center-text">
+            <h1 class="heading-1">
+              Go where you want, <br />
+              cycle carefree!
+            </h1>
+            <p class="section__paragraph">
+              Send your email and we will do the rest
+            </p>
+          </div>
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            id="form"
+            class="form cta-form"
+          >
+            <label for="email"></label>
+            <input
+              name="email"
+              class="cta-form__email"
+              type="email"
+              id="email"
+              placeholder="Enter your contact email"
+              required
+            />
+            <input
+              type="submit"
+              value="Sign Up"
+              id="submit"
+              class="btn cta-form__btn"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--feature" id="features">
+        <div class="container container--feature">
+          <div class="section__title">
+            <h2 class="heading-2">How it works</h2>
+            <h3 class="heading-3">
+              For a fixed monthly fee, you get a bicycle, that always works.
+            </h3>
+          </div>
+
+          <div class="features">
+            <div class="features__img-container img1">
+              <img
+                src="/img/carl-nenzen-loven-igKjieyjcko-unsplash.jpg"
+                alt="Bicycle leaning against a blue wall"
+                class="features__img"
+              />
+              <p class="features__img-credit">
+                Photo by
+                <a
+                  href="https://unsplash.com/@archduk3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Carl Nenzen Loven</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/s/photos/bicycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </p>
+            </div>
+            <div class="features__feature feature1">
+              <div class="features__heading">
+                <div class="features__icon">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <h4 class="heading-4">Your own bicycle</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Consectetur adipisicing
+                elit. Vitae libero sint inventore, consequuntur atque mollitia.
+              </p>
+            </div>
+
+            <div class="features__feature feature2">
+              <div class="features__heading">
+                <div class="features__icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <h4 class="heading-4">Bicycle repair</h4>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. At qui
+                dolorum laudantium neque magnam cupiditate error laboriosam
+                accusantium itaque quaerat.
+              </p>
+            </div>
+            <div class="features__img-container img2">
+              <img
+                src="/img/maxim-selyuk--flQuOWF18Y-unsplash.jpg"
+                alt="Wall with hanging tools"
+                class="features__img"
+              />
+              <p class="features__img-credit">
+                Photo by
+                <a
+                  href="https://unsplash.com/@artplay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Maxim Selyuk</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/s/photos/bicycle-repair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </p>
+            </div>
+
+            <div class="features__img-container img3">
+              <img
+                src="/img/fernando-brasil-XM_2oqcbpIQ-unsplash.jpg"
+                alt="Care free girl"
+                class="features__img"
+              />
+              <p class="features__img-credit">
+                Photo by
+                <a
+                  href="https://unsplash.com/@nandovish?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Fernando Brasil</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/s/photos/happy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </p>
+            </div>
+            <div class="features__feature feature3">
+              <div class="features__heading">
+                <div class="features__icon">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <h4 class="heading-4">Bicycle Lost or Stolen</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--video" id="watch">
+        <div class="container container--video">
+          <div class="section__title u-center-text">
+            <h2 class="heading-2">Just benefits and no worries</h2>
+            <h3 class="heading-3">Watch the video to learn more.</h3>
+          </div>
+          <!-- https://coverr.co/videos/a-couple-riding-bikes--gckRnB4lfQ -->
+          <div class="video-container">
+            <iframe
+              id="video"
+              src="couple_riding_bikes.mp4"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--options" id="subscribe">
+        <div class="container container--options">
+          <div class="section__title u-center-text">
+            <h2 class="heading-2">Available plans</h2>
+            <h3 class="heading-3">Choose the option that works for you.</h3>
+          </div>
+          <div class="row">
+            <div class="col-1-of-3 col1">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--1">&nbsp;</div>
+                  <h5 class="card__heading">
+                    <span class="card__heading-span card__heading-span--1"
+                      >Standard</span
+                    >
+                  </h5>
+                  <div class="card__details">
+                    <ul>
+                      <li>Coaster brake</li>
+                      <li>Single gear</li>
+                      <li>Indestructible</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-from">From</p>
+                      <p class="card__price-value">€12 a month</p>
+                    </div>
+                    <a href="#" class="btn btn--white">Book now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3 col2">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--2">&nbsp;</div>
+                  <h5 class="card__heading">
+                    <span class="card__heading-span card__heading-span--2"
+                      >Premium</span
+                    >
+                  </h5>
+                  <div class="card__details">
+                    <ul>
+                      <li>Hand brakes</li>
+                      <li>3+ gears</li>
+                      <li>Comfortable cycling</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-from">From</p>
+                      <p class="card__price-value">€17,50 per month</p>
+                    </div>
+                    <a href="#" class="btn btn--white">Book now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-of-3 col3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--3">&nbsp;</div>
+                  <h5 class="card__heading">
+                    <span class="card__heading-span card__heading-span--3"
+                      >E-bikes</span
+                    >
+                  </h5>
+                  <div class="card__details">
+                    <ul>
+                      <li>Hand brake</li>
+                      <li>Gears</li>
+                      <li>Luxury cycling</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-3">
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-from">From</p>
+                      <p class="card__price-value">€75 per month</p>
+                    </div>
+                    <a href="#" class="btn btn--white">Book now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="foot" id="contact">
+      <ul class="foot__list">
+        <li class="foot__item"><a class="foot__link" href="#">Privacy</a></li>
+        <li class="foot__item"><a class="foot__link" href="#">Terms</a></li>
+        <li class="foot__item"><a class="foot__link" href="#">Contact</a></li>
+      </ul>
+      <span class="foot__cpr">&copy; 2021, Adridwk</span>
+      <div class="foot__credit">
+        Logo icon made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+%heading {
+  font-weight: 500;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 0.7em 0;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.btn--white {
+  display: inline-block;
+  font: inherit;
+  text-decoration: none;
+  background-color: $bg-secondary;
+  color: $font-color-primary;
+  padding: 0.5em 3em;
+}
